@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background: linear-gradient(90deg, #ea1515,#f8e409);
+    
+}
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+}
+.container-div{
+    /* width: 50%;
+    height: 80vh;
+    background-color: wheat; */
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+    margin-top: 12rem;
+}
+.container-div figure img{
+    width: 10rem;
+    height: 10rem;
+}
+.container-div figure figcaption{
+    color: #fff;
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    text-transform:capitalize;
+}
+
+input{
+    min-width: 40rem;
+    height: 3.4rem;
+    position: relative;
+    padding: 2rem 1.2rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+    color: rgb(58,57,57);
+    background-color: #fff;
+    background-image: none;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+    box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.plus{
+    margin-left: -3.5rem;
+    margin-top: 3.2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    pointer-events: auto;
+    z-index: 10;
+    background-color: #fff;
+    background-image: none;
+    color: #666;
+    transition: color o.15s linear;
+}
+.plus:hover{
+    color: rgb (47,214,122);
+}
+.showItems{
+    margin-top: 3rem;
+    text-align: center;
+}
+.eachItems{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+    min-width: 40rem;
+    word-break: break-all;
+    background: rgb(85,41,220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    color: #fff;
+   
+}
+.eachItems:hover{
+    background: rgb(249,249,252);
+    color: rgb(85,41,220);
+}
+.eachItems h3 {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+.edit, .delete {
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.btn{
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    width: 100%;
+    transition: none;
+}
+.btn:hover{
+    color:rgb(85,41,220);
+}
+.effect04{
+    color: #000;
+    outline: solid 2px #000;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+/* .effect04::before,
+.effect04 span {
+    margin: 0 auto;
+
+} */
+.effect04:hover{
+    background-color: rgb(85,41,220);
+}
+.effect04:hover span{
+    transform: translateY(-400%) scale(-0.1,20);
+}
+.effect04::before{
+ content: attr(data-sm-link-text);
+ color: #fff;
+ position: absolute;
+ left: 0;
+ right: 0;
+ margin: auto;
+ transform: translateY(500%) scale(-0.1,20);
+}
+.effect04:hover::before{
+    transform: translateY(0) scale(1,1);
+    letter-spacing: 0.05rem;
+}
+/* 
+.addItems{
+    width: 35vmax;
+    height: 6vmax;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+.plus{
+    padding-right: 1vmax;
+    cursor: pointer;
+}
+.formControl{
+    border: none;
+    outline: none;
+    padding: 2vmax;
+    font-size: 2vmax;
+}
+.eachItems{
+    margin-top: 5vmax;
+    width: 35vmax;
+    height: 6vmax;
+    padding: 1vmax;
+    background: rgb(83, 11, 249);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit{
+    padding: 0.5vmax;
+    cursor: pointer;
+}
+.delete{
+    padding: 0.5vmax;
+    cursor: pointer;
+}
+.btn{
+    margin: 2vmax;
+    padding: 2vmax;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s;
+}
+.effect04{
+    position: absolute;
+    color: #fff;
+    margin: 2vmax;
+    padding: 2vmax;
+    transform: translateY(12vmax);
+    background-color: blue;
+} */
